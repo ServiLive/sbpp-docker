@@ -16,7 +16,7 @@ services:
     environment:
       - COMPOSER_ALLOW_SUPERUSER=1
     ports:
-      - 9000:9000
+      - 9005:9000
     healthcheck:
       test: ["CMD", "curl", "-f", "http://php-fpm:9000"]
       interval: 5s
